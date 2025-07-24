@@ -33,7 +33,7 @@ module.exports = (req, res) => {
       name: "Sony WH-1000XM5",
       brand: "Sony",
       price: 349,
-      image: "https://m.media-amazon.com/images/I/61Y9ZQvYk1L._AC_UF894,1000_QL80_.jpg"
+      image: "https://audioteceg.com/cdn/shop/files/103375_original_local_1200x1050_converted_800x700.png?v=1707393680"
     },
     {
       id: 6,

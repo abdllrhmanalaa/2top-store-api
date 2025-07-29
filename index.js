@@ -1,8 +1,12 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
+
+app.get("/", (req, res) => {
+  res.send("Welcome to 2Top Store API");
+});
 
 app.use('/api/products', require('./routes/products'));
 app.use('/api/categories', require('./routes/categories'));
@@ -15,3 +19,4 @@ app.use('/api/cart', require('./routes/cart'));
 app.use('/api/orders', require('./routes/orders'));
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
